@@ -316,9 +316,13 @@ ul, ol {
     height: 310px;
     padding: 0 10px;
     text-align: center;
+
+    transition: background-color .5s linear;
 } 
 
-.services__col.active {
+
+
+.services__col:hover {
     background-color: #272b33;
 }
 
