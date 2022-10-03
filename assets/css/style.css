@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     background-color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -792,7 +793,8 @@ ul, ol {
 .blog__item:nth-child(3)::before {
     content: "";
     display: block;
-    width: 820px;
+    width: 100%;
+    max-width: 765px;
     height: 1px;
     margin: -20px;
     position: absolute;
@@ -1280,6 +1282,10 @@ ul, ol {
         display: block;
     }
 
+    .order__col {
+        width: 50%;
+    }
+
     .order__item {
         font-size: 14px;
     }
@@ -1371,6 +1377,15 @@ ul, ol {
 
     .footer__form input:nth-child(2) {
         padding: 10px 20px 15px;
+    }
+
+    .footer--sub {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .footer__title {
+        padding-right: 20px;
     }
 
 }
@@ -1509,6 +1524,43 @@ ul, ol {
     .map {
         margin-top: 20px;
     }
+
+    /* Footer */
+    .footer__title {
+        font-size: 8px;
+        padding-right: 5px;
+
+    } 
+
+    .footer__form input:nth-child(2) {
+        font-size: 10px;
+    }
+
+    .footer__form input:nth-child(1) {
+        font-size: 10px;
+    }
+
+    .footer__social a {
+        font-size: 15px;
+        padding: 0px 15px;
+    }
+
+    .footer__form input:nth-child(2) {
+        padding: 10px 7px 15px;
+    }
+
+    .footer__solutions {
+        font-size: 10px;
+    }
+
+    .footer__info li a {
+        font-size: 10px;
+    }
+
+    .footer__info li a {
+        font-size: 10px;
+    }
+
 }
 
 
