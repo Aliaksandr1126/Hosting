@@ -6,26 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>HOSTING</title>
 </head>
 <body>
 
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
-                <a href="#" class="logo">
+                <a href="#" class="logo" data-scroll="#intro">
                     <img src="assets/images/Group 15.png" alt="nine cloud hosting">
                     <div class="logo__text">nine cloud <span class="hosting">hosting</span></div>
                 </a>
 
-                <nav class="nav">
-                    <a href="#" class="nav__link">Hosting</a>
-                    <a href="#" class="nav__link">Domains</a>
-                    <a href="#" class="nav__link">Features</a>
-                    <a href="#" class="nav__link active">Testimonials</a>
-                    <a href="#" class="nav__link">Contacs</a>
+                <nav class="nav" id="nav">
+                    <a href="#" class="nav__link" data-scroll="#hosting">Hosting</a>
+                    <a href="#" class="nav__link" data-scroll="#domains">Domains</a>
+                    <a href="#" class="nav__link" data-scroll="#features">Features</a>
+                    <a href="#" class="nav__link" data-scroll="#testimonials">Testimonials</a>
+                    <a href="#" class="nav__link" data-scroll="#contacs">Contacs</a>
                 </nav>
 
                 <button class="btn" href="#">Login</button>
@@ -41,7 +42,22 @@
     
     <main>
     <!-- INTRO -->
-        <div class="intro">
+        <div class="intro" id="intro">
+            <div class="intro__slider" id="introSlider">
+                <div>
+                    <img class="intro__slider-img" src="assets/images/Layer 7.jpg" alt="">
+                </div>
+                <div>
+                    <img class="intro__slider-img" src="assets/images/Layer 73.jpg" alt="">
+                </div>
+                <div>
+                    <img class="intro__slider-img" src="assets/images/Layer 72.jpg" alt="">
+                </div>
+                <div>
+                    <img class="intro__slider-img" src="assets/images/Layer 71.jpg" alt="">
+                </div>
+
+            </div>
 
             <div class="container">
                 <div class="intro__inner">
@@ -62,7 +78,7 @@
         </div>
 
         <!-- Services -->
-        <section class="section section--one">
+        <section class="section section--one" id="services" data-scrollspy="#services">
                 <div class="container">
                     <div class="services">
                         <div class="services__col">
@@ -93,7 +109,7 @@
         </section>  
 
         <!-- Search -->
-        <section class="section">
+        <section class="section" id="domains" data-scrollspy="#domains">
             <div class="container">
                 <h2 class="search__title">Search Domain</h2>
 
@@ -153,7 +169,7 @@
         </section>
 
         <!-- Features -->
-        <div class="section section-features">
+        <div class="section section-features" id="features" data-scrollspy="#features">
             <div class="container">
                 <h2 class="search__title search__title-features">Features</h2>
 
@@ -204,7 +220,7 @@
         </div>
 
         <!-- Plan -->
-        <section class="section">
+        <section class="section" id="hosting" data-scrollspy="#hosting">
             <div class="container">
                 <h2 class="search__title plan--title">Pick your plan</h2>
 
@@ -285,7 +301,7 @@
         </section>
 
         <!-- Testimonials -->
-        <section class="section">
+        <section class="section" id="testimonials" data-scrollspy="#testimonials">
             <div class="container">
                 <h2 class="search__title test--title">Testimonials</h2>
 
@@ -396,7 +412,7 @@
         </section>
 
         <!-- Map -->
-        <section class="section section--map">
+        <section class="section section--map" id="contacs" data-scrollspy="#contacs">
             <div class="map">
                 <div class="map__item">
                     <h5 class="map__title">
@@ -516,6 +532,11 @@
     </footer>
 
 
-    
+    <!-- JavaScript -->
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/app.js"></script>
+
 </body>
 </html>
