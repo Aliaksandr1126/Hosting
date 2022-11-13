@@ -1,5 +1,27 @@
 $(function() {
-    let intro = $("#intro");
+
+    /* Nav
+    ==================================*/
+    let navToggle = $('#navToggle');
+    let nav = $('#nav');
+    let btn = $('#btn');
+
+    navToggle.on('click', function(event) {
+        event.preventDefault();
+
+        $(this).toggleClass('active');
+        nav.toggleClass('show');
+        btn.toggleClass('show');
+    });
+
+    $(window).on("resize", function() {
+        navToggle.removeClass('active');
+        nav.removeClass('show');
+        btn.removeClass('show');
+    })
+
+
+   let intro = $("#intro");
     let header = $("#header");
     let introH = intro.innerHeight();
     let headerH = header.innerHeight();
@@ -24,6 +46,11 @@ $(window).on("scroll resize", function() {
 
         let scrollEl = $(this).data("scroll");
         let scrollElPos = $(scrollEl).offset().top;
+
+        navToggle.removeClass('active');
+        nav.removeClass('show');
+        btn.removeClass('show');
+
 
         $("html, body").animate({
             scrollTop: scrollElPos - headerH
@@ -74,7 +101,7 @@ $(window).on("scroll resize", function() {
             arrows: false,
             fade: true,
             autoplay: true,
-            autoplaySpeed: 5000
+            autoplaySpeed: 3500
           });
 
 });

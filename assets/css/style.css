@@ -11,6 +11,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 
 *,
 *::after,
@@ -122,76 +126,29 @@ ul, ol {
 
 /* Burger */
 .burger {
-    display: none;
-    width: 30px;
-    padding: 10px 0;
-    font-size: 0;
-    border: 0;
+    padding: 0;
     background: none;
-    cursor: pointer;
-    position: absolute;
-    top: 13px;
-    right: 17px;
-    z-index: 1;
+    border: 0;
+
+    display: none;
 }
 
 .burger:focus {
-    outline: 0;
+    outline: none;
 }
 
 .burger__item {
-    display: block;
-    width: 100%;
-    height: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 12px;
 
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-    transition: transform .3s linear;
+    transition: color .2s linear;
 }
 
-.burger:active
-.burger__item {
-    background: none;
+.burger__item:hover {
+    color: #a3beb9;
 }
-
-.burger__item::before,
-.burger__item::after {
-    content: "";
-    width: 100%;
-    height: 3px;
-
-    background-color: #fff;
-    position: absolute;
-    left: 0;
-    z-index: 1;
-    transition: transform .3s linear;
-}
-
-.burger__item::before {
-    top: -8px;
-}
-
-.burger:active
-.burger__item::before {
-    transform-origin: left top;
-    transform: rotate(45deg) translateX(-2px);
-} 
-
-.burger:active
-.burger__item::after {
-    transform-origin: left bottom;
-    transform: rotate(-45deg) translateX(-3px);
-} 
-
-.burger__item::after {
-    bottom: -8px;
-}
-
 
 /* Button */
 .btn {
@@ -225,6 +182,7 @@ ul, ol {
     border: 0;
     background-color: #444851;
 }
+
 
 /* Intro */
 .intro {
@@ -1238,22 +1196,49 @@ ul, ol {
         height: 50px;
     }
 
-    .nav,
-    .btn {
+    .nav {
         display: none;
+        flex-direction: column;
         width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding-right: 15px;
+        background-color: rgba(0, 0, 0, 0.82);
+        text-align: right;
         position: absolute;
         top: 100%;
         left: 0;
+        right: 0;
+        z-index: 1;
     }
 
-    .nav.active {
+    .nav.show {
         display: block;
+    }
+
+    .btn {
+        display: none;
+        padding: 10px 20px;
+        font-size: 10px;
+
+        position: absolute;
+        bottom: -400%;
+        right: 18px;
+        z-index: 1;
+    }
+
+    .btn.show {
+        display: block;
+    }
+
+    .btn_login {
+        margin-top: 10px;
     }
 
     .nav__link {
         display: block;
         margin: 0;
+        padding: 7px;
     }
 
     .burger {
