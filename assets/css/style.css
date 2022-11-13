@@ -1222,7 +1222,7 @@ ul, ol {
         font-size: 10px;
 
         position: absolute;
-        bottom: -400%;
+        bottom: -450%;
         right: 18px;
         z-index: 1;
     }
