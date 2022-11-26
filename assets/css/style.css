@@ -1120,6 +1120,132 @@ ul, ol {
 
 
 
+/* Modals */
+.modal {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal__inner {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    height: 400px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.modal__header {
+    margin-bottom: 30px;
+}
+
+.modal__title {
+    font-size: 24px;
+    color: #000;
+    font-weight: 900;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.form__email,
+.form__password {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.form__password {
+    margin-top: 20px;
+}
+
+.input1 {
+    padding: 10px;
+    width: 100%;
+    height: 30px;
+    color: #b0b3b8;
+    border-radius: none;
+}
+
+.form__submit {
+    display: block;
+    margin: 0 auto;
+    margin-top: 35px;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    color: #fff;
+    background-color: #07c;
+    border: 0;
+    cursor: pointer;
+
+    transition: background-color .3s linear;
+}
+
+.form__submit:hover {
+    background-color: rgb(74, 104, 126);
+}
+
+.regist {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+
+    transition: color .3s linear;
+}
+
+.regist:hover {
+    color: #07c;
+    text-decoration: underline;
+}
+
+.modal__close {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: -30px;
+    z-index: 1;
+
+    transition: transform .1s linear;
+} 
+
+.modal__close:focus {
+    outline: none;
+}
+
+.modal__close:hover {
+    transform: rotate(90deg);
+}
+
+.modal__close img {
+    display: block;
+}
 
 
 

@@ -91,6 +91,23 @@ $(window).on("scroll resize", function() {
             });        
         }
 
+        /* Modal */
+        $('[data-modal]').on('click', function(event) {
+            event.preventDefault();
+
+            let modal = $(this).data('modal');
+            console.log(modal);
+            $('body').addClass('no-scroll');
+            $(modal).addClass('show');
+        });
+
+        $('[data-modal-close]').on('click', function(event) {
+            event.preventDefault();
+            let modal = $(this).parents('.modal');
+            $('body').removeClass('no-scroll');
+            modal.removeClass('show');
+        });
+
 
         // Slick slider https://kenwheeler.github.io/slick/
         
