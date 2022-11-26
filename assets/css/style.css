@@ -1540,6 +1540,31 @@ ul, ol {
         padding-right: 20px;
     }
 
+    /* Modals */
+    .modal__inner {
+        padding: 15px;
+        height: auto;
+    }
+
+    .modal__close {
+        top: -30px;
+        right: -1px;
+    }
+
+    .modal__title {
+        font-size: 20px;
+    }
+
+    .form__submit {
+        margin-top: 25px;
+        font-size: 12px;
+    }
+
+    .regist {
+        padding-bottom: 15px;
+    }
+
+
 }
 
 /* max-width: 575px */
@@ -1712,6 +1737,7 @@ ul, ol {
     .footer__info li a {
         font-size: 10px;
     }
+
 
 }
 

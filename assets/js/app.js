@@ -108,6 +108,15 @@ $(window).on("scroll resize", function() {
             modal.removeClass('show');
         });
 
+        $('.modal').on('click', function() {
+            $('body').removeClass('no-scroll');
+            $(this).removeClass('show');
+        });
+
+        $('.modal__content').on('click', function(event) {
+            event.stopPropagation();
+        });
+
 
         // Slick slider https://kenwheeler.github.io/slick/
         
