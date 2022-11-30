@@ -301,15 +301,15 @@ ul, ol {
 .services {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 -10px;
+    /* justify-content: space-between; */
+    margin: 0 -20px;
 }
 
 .services__col {
-    width: 33,33333%;
+    width: 33.33333%;
     max-width: 320px;
     height: 310px;
-    padding: 0 10px;
+    padding: 0 20px;
     text-align: center;
 
     transition: background-color .5s linear;
@@ -1130,6 +1130,7 @@ ul, ol {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 15px;
+    overflow-y: auto;
 
     position: fixed;
     top: 0;
@@ -1737,6 +1738,9 @@ ul, ol {
     .footer__info li a {
         font-size: 10px;
     }
+
+    /* Modals */
+    
 
 
 }
