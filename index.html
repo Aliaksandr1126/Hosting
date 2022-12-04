@@ -18,7 +18,7 @@
         <div class="container">
             <div class="header__inner">
                 <a href="#" class="logo" data-scroll="#intro">
-                    <img src="assets/images/Group 15.png" alt="nine cloud hosting">
+                    <img src="assets/images/Group15.png" alt="nine cloud hosting">
                     <div class="logo__text">nine cloud <span class="hosting">hosting</span></div>
                 </a>
 
@@ -30,7 +30,7 @@
                     <a href="#" class="nav__link" data-scroll="#contacs">Contacs</a>
                 </nav>
 
-                <button class="btn" href="#" id="btn" data-modal="#becomeClientModal">Login</button>
+                <button class="btn" id="btn" data-modal="#becomeClientModal">Login</button>
 
                 <button class="burger" type="button" id="navToggle">
                     <span class="burger__item">Meny</span>
@@ -46,16 +46,16 @@
         <div class="intro" id="intro">
             <div class="intro__slider" id="introSlider">
                 <div>
-                    <img class="intro__slider-img" src="assets/images/Layer 7.jpg" alt="">
+                    <img class="intro__slider-img" src="assets/images/Layer7.jpg" alt="">
                 </div>
                 <div>
-                    <img class="intro__slider-img" src="assets/images/Layer 73.jpg" alt="">
+                    <img class="intro__slider-img" src="assets/images/Layer73.jpg" alt="">
                 </div>
                 <div>
-                    <img class="intro__slider-img" src="assets/images/Layer 72.jpg" alt="">
+                    <img class="intro__slider-img" src="assets/images/Layer72.jpg" alt="">
                 </div>
                 <div>
-                    <img class="intro__slider-img" src="assets/images/Layer 71.jpg" alt="">
+                    <img class="intro__slider-img" src="assets/images/Layer71.jpg" alt="">
                 </div>
 
             </div>
@@ -69,7 +69,7 @@
                             1-on-1 consultation to help you get started.
                         </div>
 
-                        <button class="intro__started">
+                        <button class="intro__started" data-modal="#becomeClientModal">
                         <span>Get Started</span>
                         </button>
 
@@ -91,7 +91,7 @@
                         </div>
 
                         <div class="services__col active" data-aos="fade-up">
-                            <img class="img__services" src="assets/images/Layer 67.png" alt="">
+                            <img class="img__services" src="assets/images/Layer67.png" alt="">
                             <div class="services__name">Managed Services</div>
                             <div class="services__text">Leave the set up, management 
                                 and monitoring to us.</div>
@@ -99,7 +99,7 @@
                         </div>
 
                         <div class="services__col" data-aos="fade-up">
-                            <img class="img__services" src="assets/images/Vector Smart Object.png" alt="">
+                            <img class="img__services" src="assets/images/VectorSmart Object.png" alt="">
                             <div class="services__name">Cloud Services</div>
                             <div class="services__text">Reliable, high- performance cloud that meets 
                                 your changing business demands.</div>
@@ -124,7 +124,7 @@
                         <input class="input" name="name" type="text" size="50" placeholder="http://">
                     </div>
                     <div class="form__list">    
-                        <select class="list" name="adress" id="">
+                        <select class="list" name="adress">
                             <option value=".com">.com</option>
                             <option value=".by">.by</option>
                             <option value=".org">.org</option>
@@ -189,7 +189,7 @@
                             faucibus sollicitudin. </div>
                     </div>
 
-                    <div class="features__item" data-aos="fade-up"data-aos-delay="100">
+                    <div class="features__item" data-aos="fade-up" data-aos-delay="100">
                         <img class="features__icon" src="assets/images/icon/fetures/vps.png" alt="" >
                         <div class="features__title">VPS server</div>
                         <div class="features__text">Phasellus aliquam arcu quis lectus aliquam, 
@@ -436,7 +436,7 @@
                     <a href="https://goo.gl/maps/FCgYM3JchfEPB8GR6"></a>
                 </map> -->
 
-                <map class="map__stret">
+                <map class="map__stret" name="map">
                     <a href="https://goo.gl/maps/cmaF9kCRxR9FYJ9EA" target="_blank"> <i class="fa-solid fa-location-dot"></i></a>
                 </map>
 
@@ -535,24 +535,26 @@
     <!-- Modals -->
     <div class="modal" id="becomeClientModal">
         <div class="modal__inner">
-            <div class="modal__header">
-                <h5 class="modal__title">Login</h5>
-            </div>
+            <div class="modal__content">
+                <div class="modal__header">
+                    <h5 class="modal__title">Login</h5>
+                </div>
 
-            <form action="/" method="post" enctype="text/plain">
-                <p class="form__email">Email</p>
-                <input class="input1" type="email" name="Email">
-                <p class="form__password">Password</p>
-                <input class="input1" type="password" name="password" id="">
-                <input class="form__submit" type="submit" name="input" value="sing in">
-            </form>
+                <form action="/" method="post" enctype="text/plain">
+                    <p class="form__email">Email</p>
+                    <input class="input1" type="email" name="Email">
+                    <p class="form__password">Password</p>
+                    <input class="input1" type="password" name="password">
+                    <input class="form__submit" type="submit" name="input" value="sing in">
+                </form>
 
-            <a href="#" class="regist">Registration</a>
+                <a href="#" class="regist">Registration</a>
 
-            <button class="modal__close" type="button" data-modal-close>
-                <img src="assets/images/close.svg" alt="">
-            </button>
-        </div>  
+                <button class="modal__close" type="button" data-modal-close>
+                    <img src="assets/images/close.svg" alt="">
+                </button>
+            </div>  
+        </div>
     </div>
 
 

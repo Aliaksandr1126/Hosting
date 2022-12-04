@@ -1329,6 +1329,7 @@ ul, ol {
         width: 100%;
         height: auto;
         min-height: 100vh;
+        overflow: auto;
         padding-right: 15px;
         background-color: rgba(0, 0, 0, 0.82);
         text-align: right;
@@ -1365,7 +1366,7 @@ ul, ol {
     .nav__link {
         display: block;
         margin: 0;
-        padding: 7px;
+        padding: 10px;
     }
 
     .burger {
@@ -1738,10 +1739,6 @@ ul, ol {
     .footer__info li a {
         font-size: 10px;
     }
-
-    /* Modals */
-    
-
 
 }
 
